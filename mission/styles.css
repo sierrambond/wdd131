@@ -1,0 +1,60 @@
+body {
+    font-size: 20px;
+    font-family: Times New Roman, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #006EB6;
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ol.list {
+    padding-left: 40px;
+}
+
+ol.list li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logo {
+    width: 150px;  
+    height: 100px;  
+    display: block;
+    margin: 0 auto;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
