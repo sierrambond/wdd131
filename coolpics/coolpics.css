@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+
+ :root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 20px 0; 
+    width: 100%; 
+    position: relative; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5em;
+}
+
+button#menuButton {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+a:link, a:visited {
+    color: var(--text-light);
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    grid-column: 1 / -1;
+    text-align: center; 
+    font-size: 1.5em; 
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+figure {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: left;
+    padding: 10px 220px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav {
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    button#menuButton {
+        display: none;
+    }
+}

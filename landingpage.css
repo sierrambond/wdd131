@@ -1,0 +1,28 @@
+body {
+    background-color: #F5D1C5;
+}
+
+.box {
+    border: 10px solid #B99E95;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Poppins, "Gowun Batang", sans-serif;
+    --heading-font: "Edu Australia VIC WA NT Hand Guides";
+}
+
+.moodeng {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
