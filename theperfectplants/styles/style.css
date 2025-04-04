@@ -20,14 +20,6 @@
   --nav-hover-background-color: #A9DA98;
 }
 
-/* body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-} */
-
 body {
   font-family: var(--paragraph-font);
   font-size: 18px;
@@ -43,12 +35,6 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-
-
-/* img {
-  display: block;
-  margin: 0 auto;
-} */
 
 img {
   max-width: 100%;
@@ -88,8 +74,19 @@ header > h1, header > h2 {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
-  padding: 1em;
+  /* padding: 1em; */
+  padding: 0.5em 1em;
+  
 }
+
+.hero {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
 
 .colors {
   width: 100%;
@@ -233,12 +230,22 @@ nav a:hover {
 } */
 
 
-main {
+/* main {
   background-color: white;
   border-radius: 16px;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+} */
+
+main {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
 }
+
 
 section {
   margin-bottom: 2rem;
@@ -261,4 +268,5 @@ button:hover {
   background-color: var(--accent2-color);
   color: white;
 }
+
 
