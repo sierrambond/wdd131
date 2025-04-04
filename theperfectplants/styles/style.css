@@ -20,18 +20,44 @@
   --nav-hover-background-color: #A9DA98;
 }
 
-body {
+/* body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
   font-size: 18px;
   text-align: center;
+} */
+
+body {
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f9f4;
+  color: var(--paragraph-color-on-white);
+  line-height: 1.6;
 }
 
-img {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* img {
   display: block;
   margin: 0 auto;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -102,7 +128,7 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
-nav {
+/* nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
@@ -115,16 +141,39 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-}
+} */
 
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
 
-nav a:hover {
+/* nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+} */
+
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
 }
+
+nav a {
+  color: var(--nav-link-color);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
 
 .sitemap {
   display: grid;
@@ -176,11 +225,19 @@ nav a:hover {
   border-right: 1px solid;
 }
 
-main {
+/* main {
   padding: 1em;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */
+
+
+main {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 section {
@@ -204,3 +261,4 @@ button:hover {
   background-color: var(--accent2-color);
   color: white;
 }
+
