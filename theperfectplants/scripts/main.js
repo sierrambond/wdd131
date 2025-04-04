@@ -16,4 +16,26 @@ const stores = {
       list.appendChild(li);
     });
   }
+// Plant Care page toggle
+function toggleTips() {
+    const tips = document.getElementById("extraTips");
+    tips.style.display = tips.style.display === "none" ? "block" : "none";
+  }
+  
+  // Propagation page timer
+  function startTimer() {
+    let time = 30;
+    const display = document.getElementById("timerDisplay");
+    display.textContent = `Time left: ${time}s`;
+  
+    const interval = setInterval(() => {
+      time--;
+      display.textContent = `Time left: ${time}s`;
+  
+      if (time <= 0) {
+        clearInterval(interval);
+        display.textContent = "Propagation session complete!";
+      }
+    }, 1000);
+  }
   
