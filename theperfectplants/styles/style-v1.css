@@ -284,8 +284,8 @@ button:hover {
 }
 
 .image-grid img {
-  width: 400px;        /* or try 250px if you prefer smaller */
-  height: 300px;
+  width: 450px;        /* or try 250px if you prefer smaller */
+  height: 400px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
