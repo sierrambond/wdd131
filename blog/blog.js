@@ -25,3 +25,54 @@ const articles = [
 		stars: '⭐⭐⭐⭐'
 	}
 ]
+
+const articlesContainer = document.getElementById('articles-container');
+
+articles.forEach(article => {
+    const articleElement = document.createElement('div');
+    articleElement.classList.add('article'); 
+
+    const articleDetails = document.createElement('div');
+    articleDetails.classList.add('article-details');
+    articleDetails.innerHTML = `
+        <p class="date">${article.date}</p>
+        <p class="age">Age: ${article.ages}</p>
+        <p class="genre">Genre: ${article.genre}</p>
+        <p class="rating">Rating: ${article.stars}</p>
+    `;
+
+    const articleContent = document.createElement('div');
+    articleContent.classList.add('article-content');
+    articleContent.innerHTML = `
+        <h2>${article.title}</h2>
+        <img src="${article.imgSrc}" alt="${article.imgAlt}">
+        <p class="description">${article.description}</p>
+    `;
+
+    const articleFilters = document.createElement('aside');
+    articleFilters.classList.add('article-filters');
+    articleFilters.innerHTML = `
+        <p>Filters for this book will go here.</p>
+    `;
+
+    const articleWrapper = document.createElement('div');
+    articleWrapper.classList.add('article-wrapper');
+
+    const detailsColumn = document.createElement('div');
+    detailsColumn.classList.add('details-column');
+    detailsColumn.appendChild(articleDetails);
+
+    const contentColumn = document.createElement('div');
+    contentColumn.classList.add('content-column');
+    contentColumn.appendChild(articleContent);
+
+    const filtersColumn = document.createElement('div');
+    filtersColumn.classList.add('filters-column');
+    filtersColumn.appendChild(articleFilters);
+
+    articleWrapper.appendChild(detailsColumn);
+    articleWrapper.appendChild(contentColumn);
+    articleWrapper.appendChild(filtersColumn);
+
+    articlesContainer.appendChild(articleWrapper);
+});
